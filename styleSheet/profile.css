@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #0095b1;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 70px;
+}
+
+main .container{
+    width: 999px;
+    height: 85vh;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.formProfile{
+    width: 70%;
+    border-right: 2px solid #eceeef;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.formProfile .left-layout{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #eceeef;
+    box-sizing: border-box;
+}
+
+.left-layout-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.left-layout-container img{
+    width: 170px;
+    height: 170px;
+    background-color: #eceeef;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.left-layout-container strong{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.left-layout-container p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aeaeae;
+}
+
+.area-chooseAvatar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.chooseAvatar{
+    display: flex;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #005ca5;
+    cursor: pointer;
+}
+
+.left-layout-container
+.area-chooseAvatar
+.chooseAvatar
+.avatar{
+    width: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.center-layout{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.center-layout h3{
+    font-size: x-large;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.center-layout .name-surname{
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-layout 
+.name-surname 
+.surname-label-input{
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-layout .name-surname .surname-label-input label{
+    font-size: 1.3rem;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.center-layout .name-surname .surname-label-input input,
+.center-layout .name-surname .surname-label-input select,
+.center-layout input,
+.formPassword .password-layout input{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #f6f6f6;
+    background-color: #eceeef;
+}
+
+.center-layout .information{
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-layout 
+.information
+.error-email,
+.error-passwordOld,
+.error-passwordNew,
+.error-passwordNew2{
+    color: red;
+    font-size: 1.4rem;
+    padding-top: 3px;
+}
+
+.center-layout label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.center-layout input,
+.center-layout select{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #f6f6f6;
+    background-color: #eceeef;
+}
+
+.center-layout .btn-submit-formProfile,
+.formPassword .password-layout .btn-submit-formPassword{
+    padding: 10px 30px;
+    margin: auto;
+    border: none;
+    background-color: #0095b1;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.center-layout .btn-submit-formProfile:hover{
+    opacity: 0.9;
+}
+
+.formPassword{
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.formPassword .password-layout{
+    margin-top: 195px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formPassword .password-layout label{
+    padding: 5px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.formPassword .password-layout .btn-submit-formPassword{
+    margin-top: 25px;
+}
+
+
+.layout-blur-message-box{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+}
+
+
+.message-box-success{
+    /* visibility: hidden; */
+    width: 400px;
+    height: 350px;
+    box-shadow: 0px 5px 14px 0px rgba(109,110,120,1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: auto;
+    animation: animation-show-message-box ease 0.5s forwards;
+}
+
+@keyframes animation-show-message-box {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+.message-box-success div{
+    width: 100%;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.message-box-success p,
+.message-box-success a{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #005ca5;
+    color:#fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: auto;
+    cursor: pointer;
+    animation: animation-grow-element ease 0.8s forwards;
+}
+
+.message-box-success a{
+    background-color: #343a40;
+}
+
+@keyframes animation-grow-element {
+    0%, 50%{
+        width: 0;
+        color: transparent;
+    }
+    75%{
+        width: 150px;
+        color: transparent;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+.message-box-success img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    animation: animation-grow-message-box-success-img ease 0.8s forwards;
+}
+
+@keyframes animation-grow-message-box-success-img {
+    0%, 50%{
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+    }
+    100%{
+        margin: 0 auto;
+    }
+}
+
+.message-box-success h2{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    animation: animation-show-message-box-success-h2 ease 0.8s forwards;
+}
+
+@keyframes animation-show-message-box-success-h2 {
+    0%, 50%{
+        color: transparent;
+    }
+}

@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.indexs-product{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #eeeeee;
+}
+
+.indexs-product .container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.indexs-product .container a{
+    width: 185px;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.indexs-product .container a:hover{
+    background-color: #fff;
+}
+
+@keyframes animation-empty-row-bottom {
+    100%{
+        width: 90%;
+    }
+}
+
+.indexs-product .container a:hover::after{
+    animation: animation-empty-row-bottom ease 0.4s forwards;
+}
+
+.indexs-product .container a::after{
+    content: "";
+    width: 0;
+    margin: 0 auto;
+    border-radius: 3px;
+    border-bottom: 3px solid #c0c0c0;
+}
+
+.indexs-product .container a img{
+    width: 100%;
+    height: 80%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.indexs-product .container a:nth-child(1) img{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.indexs-product .container a:nth-child(2) img{
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.indexs-product .container a:nth-child(3) img{
+    width: 45%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.indexs-product .container a span{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.empty-row-make{
+    width: 100%;
+    padding: 4px;
+    background-color: #eeb111;
+    box-sizing: border-box;
+}

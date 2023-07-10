@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./pictures/logoHome.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./styleSheet/navbar.css">
+    <link rel="stylesheet" href="./styleSheet/footer.css">
+    <link rel="stylesheet" href="./styleSheet/indexs-product.css">
+    <link rel="stylesheet" href="./styleSheet/news.css">
+    <link rel="stylesheet" href="./styleSheet/specl-product.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo-nav" href="./home.html" style="margin-right: 30px;">
+            <img class="logo-shop" src="./pictures/logoHome.png">
+            <p>GOOD</p>
+        </a>
+        <form class="form-nav" method="get" action="./search.html">
+            <input class="input-search-nav" type="text" name="sch" placeholder="Tìm kiếm thiết bị của bạn:">
+            <button class="search-icon" type="submit">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="list-search">
+            </div>
+        </form>
+        <ul class="nav-list">
+            <li class="nav-item item-login">
+                <a id="login-link" class="login-link" href="#"></a>
+            </li> 
+            <li class="nav-item">
+                <a href="./home.html">Trang chủ</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="./contact.html">Liên hệ</a>
+            </li>
+        
+            <li class="nav-item">
+                <div id="item-show-more" class="item-show-more">
+                    <a href="./products.html">
+                        Sản phẩm
+                    </a>
+                    <i id="icon-dropdown-sp" class="fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div id="layout-show-more" class="layout-show-more">
+                    <span class="empty-line-hover-show-more"></span> 
+                    <a href="./TV.html" class="item-show-more-item">
+                        <div class="img-product-show-more">
+                            <img src="./pictures/TV.png" style="width: 37px; height: 35px" alt="">
+                        </div>
+                        <p class="name-product-show-more">Tivi</p>
+                    </a>
+                    <a href="./tu-lanh.html" class="item-show-more-item">
+                        <div class="img-product-show-more">
+                            <img src="./pictures/TuLanh.jpg" alt="">
+                        </div>
+                        <p class="name-product-show-more">Tủ lạnh</p>
+                    </a>
+                    <a href="./may-giat.html" class="item-show-more-item">
+                        <div class="img-product-show-more">
+                            <img src="./pictures/MayGiat.jpg" alt="">
+                        </div>   
+                        <p class="name-product-show-more">Máy giặt</p>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="./login.html" class="btn-show-cart" style="cursor: pointer;">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-container">
+
+        <section class="post-news">
+            <div class="options-looking-img">
+                <div class="btn-left-roll">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="btn-right-roll">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="container-img">
+                    <div class="screen-post"></div>
+                    <div class="img-img-look img-item-1" style="background-image: url('./pictures/post-TV.jpg');"></div>
+                    <div class="img-img-look img-item-2" style="background-image: url('./pictures/mayGiat-post.png');"></div>
+                    <div class="img-img-look img-item-3" style="background-image: url('./pictures/mayLanh-post.jpg');"></div>
+                    <div class="img-img-look img-item-4" style="background-image: url('./pictures/quat-post.jpg');"></div>
+                    <div class="img-img-look img-item-5" style="background-image: url('./pictures/tuLanh-post.png');"></div>
+                </div>
+
+                <ul class="list-item-point">
+                    <li style="color: #fff;" class="point-to-img point-to-img-item-1"><i class="fa-sharp fa-solid fa-circle icons-img-item dot-item-1"></i></i></li>
+                    <li class="point-to-img point-to-img-item-2"><i class="fa-sharp fa-solid fa-circle icons-img-item dot-item-2"></i></i></li>
+                    <li class="point-to-img point-to-img-item-3"><i class="fa-sharp fa-solid fa-circle icons-img-item dot-item-3"></i></i></li>
+                    <li class="point-to-img point-to-img-item-4"><i class="fa-sharp fa-solid fa-circle icons-img-item dot-item-4"></i></i></li>
+                    <li class="point-to-img point-to-img-item-5"><i class="fa-sharp fa-solid fa-circle icons-img-item dot-item-5"></i></i></li>
+                </ul>
+            </div>
+            <div class="empty-opacity-left"></div>
+            <div class="empty-opacity-right"></div>
+        </section>
+
+        <div class="empty-row-make"></div>
+        <section class="indexs-product">
+            <div class="container">
+                <a href="./TV.html">
+                    <img src="./pictures/TV.png" alt="">
+                    <span>Tivi</span>
+                </a>
+                <a href="./may-giat.html">
+                    <img src="./pictures/MayGiat.jpg" alt="">
+                    <span>Máy giặt</span>
+                </a>
+                <a href="./tu-lanh.html">
+                    <img src="./pictures/TuLanh.jpg" alt="">
+                    <span>Tủ lạnh</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="specl-product">
+            <div class="img-product">
+                <img src="./pictures/home/tv-qled-samsung-98-inch-qa98q900rbkxxv-1.jpg" alt="">
+                <div class="detail-to-clt">
+                    <p>
+                        Smart Tivi QLED Samsung
+                    </p>
+                    <strong>
+                        8K 98 inch
+                    </strong>
+                    <p>
+                        Khung hình sống động, từng chi tiết nhỏ nhất được tái tạo tỉ mỉ đến khó tin, kết hợp với độ phân giải đỉnh cao, QLED 8K Q900R như bao trùm mọi giác quan, biến từng thước phim trở nên chân thật.
+                    </p>
+                    <a href="./san-pham.html?sp=401">Xem thêm</a>
+                </div>
+            </div>
+            <div class="img-product">
+                <img src="./pictures/home/dieu-hoa-hdgfjfc.jpg" alt="">
+                <div class="detail-to-clt">
+                    <p>
+                        Máy Giặt Electrolux Inverter
+                    </p>
+                    <strong>
+                        9 kg
+                    </strong>
+                    <p>
+                        Được ứng dụng công nghệ Digital inverter hiện đại, sử dụng nam châm vĩnh cửu giảm bớt ma sát khi vận hành, mang lại hiệu quả tiết kiệm điện năng, vận hành êm ái, ổn định, giảm hóa đơn điện hàng tháng cho gia đình bạn. Máy giặt Electrolux inverter này có thể dễ dàng chẩn đoán, khắc phục lỗi nhanh chóng với tính năng Smart Check
+                    </p>
+                    <a href="./san-pham.html?sp=528">Xem thêm</a>
+                </div>
+            </div>
+            <div class="img-product">
+                <img src="./pictures/home/tu-lanh-family.jpg" alt="">
+                <div class="detail-to-clt">
+                    <p>
+                        Tủ lạnh LG Inverter
+                    </p>
+                    <strong>
+                        635 Lít Màu Bạc
+                    </strong>
+                    <p>
+                        Tủ lạnh LG Inverter 635 lít GR-X257JS là mẫu tủ lạnh được thiết kế cửa phụ Door-in-door hiện đại, sang trọng với chất liệu cửa tủ bằng thép không gỉ có độ bền cao. Sử dụng động cơ Linear Inverter giúp tiết kiệm điện năng và tủ hoạt động êm ái                    
+                    </p>
+                    <a href="./san-pham.html?sp=485">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+                <p>CÔNG TY CỔ PHẦN CÔNG NGHỆ NHOM 11</p>
+                <p>Tại Trường Đại Học Công Nghiệp Thực Phẩm TP.HCM</p>
+            </div>
+        
+            <div>
+                <strong>CHÍNH SÁCH</strong>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Chính sách vận chuyển</a>
+                <a href="#">Chính sách đổi trả</a>
+                <a href="#">Quy định sử dụng</a>
+            </div>
+    
+            <div>
+                <strong>VỀ CHÚNG TÔI</strong>
+                <a href=".">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Liên hệ</a>
+                <a href="./AboutMe.php">Về tôi</a>
+            </div>
+        </div>
+        <div class="bottom-fb-ins-tw">
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="./Javascript/news.js" defer></script>
+<script type="module" src="./Javascript/handleNavbar.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" defer></script>
+<script src="./Javascript/product.js" defer></script>
+</html>
+
+

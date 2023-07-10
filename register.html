@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=" ./pictures/logoHome.png">
+    <link rel="stylesheet" href="./styleSheet/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="./pictures/logoHome.png">
+    <title>Đăng ký</title>
+</head>
+<style>
+    body{
+        background-color: #eeeeee;
+    }
+
+    main{
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .layout-pr-in .layout-input:last-child{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 0 10px;
+    }
+
+    .layout-pr-in .layout-input:last-child input{
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .layout-pr-in .layout-input:last-child label{
+        display: flex;
+        position: unset;
+    }
+
+    .layout-pr-in .layout-input:last-child label strong{
+        color: #3f3d56;
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <main class="container" style="animation: animation-form-login ease 1.5s">
+        <div class="form-register">
+            <div class="layout-pr">
+                <h1>REGISTER</h1>
+                <div class="layout-pr-in">
+                    <div class="layout-input">
+                       <label class="label">Email:</label>
+                        <input class="input" id="email" name="email" type="text">
+                        <span class="error error-email"></span>
+                    </div>
+                    <div class="layout-input">
+                        <label class="label">Username:</label>
+                        <input class="input" id="username" name="username" type="text">
+                        <span class="error error-username"></span>
+                    </div>
+                    <div class="layout-input">
+                        <label class="label">Password:</label>
+                        <input class="input" id="password" name="password" type="password">
+                        <span class="error error-password"></span>
+                    </div>
+                    <div class="layout-input">
+                        <label class="label">Password again:</label>
+                        <input class="input" id="password-again" name="password-again" type="password">
+                        <span class="error error-password-again"></span>
+                    </div>
+                    <div class="layout-input">
+                        <input class="checkbox-agree" name="checkbox" type="checkbox">
+                        <label>Tôi đồng ý với&NonBreakingSpace;<strong>tất cả các dịch vụ</strong></label>
+                    </div>
+                </div>
+                <div class="layout-button">
+                    <span id="btn-submit-regis" class="btn-submit-regis">Sign up</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="message-box-show" class="message-box-show">
+            <span class="line-Top Error-line"></span>
+            <div class="layout-content-message">
+                <i></i>
+                <strong class="text-message"></strong>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" defer></script>
+<script type="module" src="./Javascript/handleLogin.js" defer></script>
+</html>

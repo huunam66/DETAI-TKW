@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
+
+.container-main{
+    width: 100%;
+    margin: 75px auto 20px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 4), 1fr));
+    grid-gap: 0px;
+}
+
+.main-product-card,
+.main-product-card-empty{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5px 0;
+    margin-top: 15px;
+}
+
+.main-product-card:hover{
+    z-index: 5;
+}
+
+.main-product-card:hover{
+    animation: animation-hover-main-product-card linear 0.3s forwards;
+}
+
+@keyframes animation-hover-main-product-card {
+    100%{
+        -webkit-box-shadow: 0px 6px 8px 0px rgba(145,145,145,1);
+        -moz-box-shadow: 0px 6px 8px 0px rgba(145,145,145,1);
+        box-shadow: 0px 6px 8px 0px rgba(145,145,145,1);
+    }
+}
+
+.main-product-img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-product-card .fa-heart{
+    font-size: 1.6rem;
+    /* color: #d6184c; */
+    color: #bebebe;
+    width: 100%;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.main-product-card .fa-heart:hover{
+    color: #d6184c;
+}
+
+.main-product-img img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: auto;
+}
+
+.main-product-name{
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    line-height: 22px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #333;
+}
+
+.main-product-type{
+    width: 100%;
+    height: 45px;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #a8a8a8;
+}
+
+.main-star-numBuy{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.main-star-numBuy span{ 
+    padding: 1px 7px;
+    line-height: 22px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #388e3c;
+    margin: auto 0;
+}
+
+.main-star-numBuy span i{
+    color: #ffc107;
+}
+
+.main-star-numBuy p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#878787;
+    margin: auto 0;
+}
+
+.main-star-numBuy img{
+    width: 70px;
+    height: 85%;
+    margin: auto;
+}
+
+.main-product-price{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-product-price p{
+    padding: 1px 0;
+}
+
+.main-product-price p:nth-child(1){
+    color:#dc3545;
+    font-size: 1.6rem;
+}
+
+.main-product-price p:nth-child(2){
+    color:#878787;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    margin: auto 0;
+}
+
+.add-to-cart,
+.main-add-to-cart{
+    visibility: hidden;
+    width: 100%;
+    height: 43px;
+    box-sizing: border-box;
+    color:#fff;
+    background-color: #005ca5;
+    text-align: center;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: -43px;
+    cursor: pointer;
+    z-index: 5;
+    /* animation: animation-move-top-main-add-to-cart ease 0.5s forwards; */
+}
+
+@keyframes animation-move-bottom-main-add-to-cart {
+    0%{
+        height: 0;
+        bottom: 0;
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        height: 43px;
+        bottom: -43px;
+        line-height: 43px;
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes animation-move-top-main-add-to-cart {
+    0%{
+        height: 43px;
+        bottom: -43px;
+        line-height: 43px;
+        font-size: 1.8rem;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        height: 0;
+        bottom: 0;
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+    }
+}

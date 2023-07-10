@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="./pictures/logoHome.png">
+    <link rel="stylesheet" href="./styleSheet/login.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <main class="container" style="animation: animation-form-login ease 1.5s">
+        <form class="form-login" method="post" action="./login.php">
+            <!-- <input type="hidden" id="<?php //echo $result != null ? $result : ''?>"> -->
+            <div class="layout-pr">
+                <h1>LOGIN</h1>
+                <div class="layout-pr-in">
+                    <div class="layout-input">
+                        <label class="label">Username:</label>
+                        <input class="input" id="username" name="username" type="text">
+                        <span class="error error-username"></span>
+                    </div>
+                    <div class="layout-input">
+                        <label class="label">Password:</label>
+                        <input class="input" id="password" name="password" type="password">
+                        <span class="error error-password"></span>
+                    </div>
+                </div>
+                <div class="layout-button">
+                    <button id="btn-submit" class="btn-submit" type="button">Sign in</button>
+                    <p class="Register">
+                        Chưa có tài khoản ?
+                        &NonBreakingSpace;
+                        <a href="./register.html">Đăng ký</a>
+                    </p>
+                </div>
+                <div class="empty-line-btn-forgot"></div>
+                </div>
+                <p class="text-forgot-pass">Quên mật khẩu</p>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" defer></script>
+<script type="module" src="./Javascript/handleLogin.js" defer></script>
+</html>

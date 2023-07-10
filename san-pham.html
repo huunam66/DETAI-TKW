@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./styleSheet/navbar.css">
+    <link rel="stylesheet" href="./styleSheet/footer.css">
+    <link rel="stylesheet" href="./styleSheet/sanpham.css">
+    <link rel="icon" href="./pictures/logoHome.png">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <a class="logo-nav" href="./home.html" style="margin-right: 30px;">
+                <img class="logo-shop" src="./pictures/logoHome.png">
+                <p>GOOD</p>
+            </a>
+            <form class="form-nav" method="get" action="./search.html">
+                <input class="input-search-nav" type="text" name="sch" placeholder="Tìm kiếm thiết bị của bạn:">
+                <button class="search-icon" type="submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="list-search">
+                </div>
+            </form>
+            <ul class="nav-list">
+                <li class="nav-item item-login">
+                    <a id="login-link" class="login-link" href="#"></a>
+                </li> 
+                <li class="nav-item">
+                    <a href="./home.html">Trang chủ</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="./contact.html">Liên hệ</a>
+                </li>
+            
+                <li class="nav-item">
+                    <div id="item-show-more" class="item-show-more">
+                        <a href="./products.html">
+                            Sản phẩm
+                        </a>
+                        <i id="icon-dropdown-sp" class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div id="layout-show-more" class="layout-show-more">
+                        <span class="empty-line-hover-show-more"></span> 
+                        <a href="./TV.html" class="item-show-more-item">
+                            <div class="img-product-show-more">
+                                <img src="./pictures/TV.png" style="width: 37px; height: 35px" alt="">
+                            </div>
+                            <p class="name-product-show-more">Tivi</p>
+                        </a>    
+                        <a href="./tu-lanh.html" class="item-show-more-item">
+                            <div class="img-product-show-more">
+                                <img src="./pictures/TuLanh.jpg" alt="">
+                            </div>
+                            <p class="name-product-show-more">Tủ lạnh</p>
+                        </a>
+                        <a href="./may-giat.html" class="item-show-more-item">
+                            <div class="img-product-show-more">
+                                <img src="./pictures/MayGiat.jpg" alt="">
+                            </div>   
+                            <p class="name-product-show-more">Máy giặt</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./login.html" class="btn-show-cart" style="cursor: pointer;">
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <p class="top-top-line">
+                <a href="./home.html">Trang chủ</a>
+                &NonBreakingSpace;/&NonBreakingSpace;
+                <a href="./TV.php">Sản phẩm</a>
+                &NonBreakingSpace;/&NonBreakingSpace;
+                <a class="top-top-line-link-sp" href="./san-pham.html?sp="></a>
+            </p>
+            <p class="status-product"></p>
+            <div class="container">
+                <div class="top">
+                    <div class="left-in-top">
+            
+                        <div class="img">
+                            <img src="">
+                        </div>
+                        <div class="list-img">
+                        </div>
+                    </div>
+                    <div class="right-in-top">
+                        <h2 class="name-product"></h2>
+                        <p class="brand">
+                            <strong>Thương hiệu:</strong>
+                            &NonBreakingSpace;
+                            
+                        </p>
+                        <div class="price">
+                            <span class="price-new"></span>
+                            &NonBreakingSpace;
+                            &NonBreakingSpace;
+                            <span class="price-old"></span>
+                        </div>
+                        <p class="online-buy-price-text">Giá mua online</p>
+                        <div class="type-product">
+                            <a class="type"></a>
+                        </div>
+                        <form class="form-buy">
+                            <button class="btn-submit" type="button">MUA NGAY</button>
+                            <p class="add-to-cart">THÊM VÀO GIỎ</p>
+                        </form>
+                        <div class="area-service">
+                            <p>
+                                <img src="./pictures/products-return.png">
+                                &NonBreakingSpace;
+                                &NonBreakingSpace;
+                                <span>Miễn phí đổi trả trong vòng 7 ngày</span>
+                            </p>  
+                            <p>
+                                <img src="./pictures/shipping-fast.png">
+                                &NonBreakingSpace;
+                                &NonBreakingSpace;
+                                <span>Giao hàng toàn quốc</span>
+                            </p>
+                            <p>
+                                <img src="./pictures/shipping-time.png">
+                                &NonBreakingSpace;
+                                &NonBreakingSpace;
+                                <span>Hồ Chí Minh, Hà Nội: 01 - 03 ngày làm việc</span>
+                            </p>
+                            <p>
+                                <img src="./pictures/shipping-time.png">
+                                &NonBreakingSpace;
+                                &NonBreakingSpace;
+                                <span>Các tỉnh thành khác: 03 - 05 ngày làm việc</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left-in-bottom">
+                        <div class="layout">
+                            <h3>THÔNG SỐ KỸ THUẬT</h3>
+                            <ul class="detail">
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail item-detail-2">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                                <li class="item-detail">
+                                    <p class="item-detail-left">
+                                        Công suất làm lạnh (BTU)
+                                    </p>
+                                    <p class="item-detail-right">
+                                        12.000 BTU
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="right-in-bottom">
+                        <div class="layout">
+                            <h3 class="title-fb-sp"></h3>
+                            <div class="feedback-detail">
+                                <div class="star-fb">
+                                    <strong class="star-score"></strong>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>227 đánh giá</p>
+                                </div>
+                                <ul class="feedback-percent">
+                                    <li class="percent">
+                                        <p>
+                                            5 
+                                            &NonBreakingSpace;
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p>
+                                            <span style="--percent-5: 86%"></span>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            86%
+                                        </p>
+                                    </li>
+                                    <li class="percent">
+                                        <p>
+                                            4 
+                                            &NonBreakingSpace;
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p>
+                                            <span style="--percent-4: 43%"></span>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            43%
+                                        </p>
+                                    </li>
+                                    <li class="percent">
+                                        <p>
+                                            3 
+                                            &NonBreakingSpace;
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p>
+                                            <span style="--percent-3: 25%"></span>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            25%
+                                        </p>
+                                    </li>
+                                    <li class="percent">
+                                        <p>
+                                            2 
+                                            &NonBreakingSpace;
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p>
+                                            <span style="--percent-2: 8%"></span>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            8%
+                                        </p>
+                                    </li>
+                                    <li class="percent">
+                                        <p>
+                                            1
+                                            &NonBreakingSpace;
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p>
+                                            <span style="--percent-1: 5%"></span>
+                                            <span></span>
+                                        </p>
+                                        <p>
+                                            5%
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="feedback">
+                                <div class="feedback-card">
+                                    <p>
+                                        <strong>Lê Dương</strong>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-brands fa-shopify"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đã mua tại GOOD shop</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                    </p>
+                                    <p>
+                                        Được bạn dắt đến đây mua sản phẩm, dịch vụ tốt hơn cả mong đợi, tại sao không cho đánh giá 6 sao nhỉ ?
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đồng tình</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-regular fa-comments"></i>
+                                        &NonBreakingSpace;
+                                        <span>Bình luận</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <span>27/03/2023</span>
+                                    </p>
+                                </div>
+                                <div class="feedback-card">
+                                    <p>
+                                        <strong>Nguyễn Hữu Nam</strong>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-brands fa-shopify"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đã mua tại GOOD shop</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                    </p>
+                                    <p>
+                                        Nhân viên tư vấn nhiệt tình, đã xinh gái lại còn nói hay, lần tới tôi sẽ dắt bạn đi theo.
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đồng tình</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-regular fa-comments"></i>
+                                        &NonBreakingSpace;
+                                        <span>Bình luận</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <span>24/03/2023</span>
+                                    </p>
+                                </div>
+                                <div class="feedback-card">
+                                    <p>
+                                        <strong>Dương Công Thành</strong>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-brands fa-shopify"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đã mua tại GOOD shop</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-light"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                    </p>
+                                    <p>
+                                        Nhân viên nam rất khó chịu, nhưng vẫn tư vấn chi tiết.
+                                    </p>
+                                    <p>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        &NonBreakingSpace;
+                                        <span>Đồng tình</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <i class="fa-regular fa-comments"></i>
+                                        &NonBreakingSpace;
+                                        <span>Bình luận</span>
+                                        &NonBreakingSpace;
+                                        &NonBreakingSpace;
+                                        <span>16/03/2023</span>
+                                    </p>
+                                </div>
+
+                                <div class="feedback-show-more">
+                                    <p class="btn-show-more">
+                                        Xem thêm 227 bài đánh giá
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+                <p>CÔNG TY CỔ PHẦN CÔNG NGHỆ NHOM 11</p>
+                <p>Tại Trường Đại Học Công Nghiệp Thực Phẩm TP.HCM</p>
+            </div>
+        
+            <div>
+                <strong>CHÍNH SÁCH</strong>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Chính sách vận chuyển</a>
+                <a href="#">Chính sách đổi trả</a>
+                <a href="#">Quy định sử dụng</a>
+            </div>
+    
+            <div>
+                <strong>VỀ CHÚNG TÔI</strong>
+                <a href=".">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Liên hệ</a>
+                <a href="./AboutMe.php">Về tôi</a>
+            </div>
+        </div>
+        <div class="bottom-fb-ins-tw">
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.facebook.com/tuong.chi.9237244"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+<script type="module" src="./Javascript/handleNavbar.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" defer></script>
+<script src="./Javascript/product.js" defer></script>
+</html>
